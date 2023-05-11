@@ -1,0 +1,38 @@
+﻿@page
+@model RagnarockApp.Pages.Exhibits.CreateExhibitModel
+@{
+    ViewData["Title"] = "CreateExhibit";
+}
+    
+
+
+<h1>CreateExhibit</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="@Model.exhibit.Id" class="control-label"> Id </label>
+        <input asp-for="@Model.exhibit.Id" class="form-control" />
+        <span asp-validation-for="exhibit.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.exhibit.Name" class="control-label">Name </label>
+        <input asp-for="@Model.exhibit.Name" class="form-control" />
+        <span asp-validation-for="exhibit.Name" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.exhibit.Description" class="control-label">Description</label>
+        <input asp-for="@Model.exhibit.Description" class="form-control" />
+        <span asp-validation-for="exhibit.Description" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.exhibit.Imagename" class="control-label"> ImageName </label>
+        <input asp-for="@Model.exhibit.Imagename" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>

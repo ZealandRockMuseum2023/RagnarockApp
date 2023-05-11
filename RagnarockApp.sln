@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RagnarockApp", "RagnarockApp.csproj", "{335DA16E-4303-4B35-9699-3090AFAA3339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RagnarockApp", "RagnarockApp.csproj", "{335DA16E-4303-4B35-9699-3090AFAA3339}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

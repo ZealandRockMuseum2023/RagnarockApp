@@ -1,0 +1,73 @@
+﻿@page
+@model RagnarockApp.Pages.Exhibits.GetAllExhibitsModel
+@{
+    ViewData["Title"] = "GetAllExhibits";
+}
+
+
+
+<h1>GetAllExhibits</h1>
+
+<p>
+    <a asp-page="CreateExhibit">Create New Exhibit</a>
+</p>
+
+<form>
+    <p>
+        Search: <input type="text" asp-for="Filtercriteria" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Customization
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Exhibits)
+        {
+            <tr>
+                <td>
+                    @item.Value.Id
+                </td>
+                <td>
+                    @item.Value.Name
+                </td>
+                <td>
+                    @item.Value.Description
+                </td>
+                <td>
+                    <img src="~/Images/@item.Value.Imagename" width="90" height="110">
+                </td>
+                <td>
+                    <a asp-page="EditExhibit" asp-route-id="@item.Key">Edit</a> |
+                    <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
+                </td>
+               
+
+
+
+
+
+            </tr>
+        }
+
+    </tbody>
+</table>

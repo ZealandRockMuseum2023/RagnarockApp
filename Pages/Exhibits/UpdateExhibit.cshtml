@@ -1,0 +1,30 @@
+﻿@page
+@model RagnarockApp.Pages.Exhibits.UpdateExhibitModel
+@{
+}
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="@Model.Exhibit.Id" class="control-label"></label>
+        <input asp-for="@Model.Exhibit.Id" class="form-control" />
+        <span asp-validation-for="@Model.Exhibit.Id" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Exhibit.Name" class="control-label"></label>
+        <input asp-for="@Model.Exhibit.Name" class="form-control" />
+        <span asp-validation-for="@Model.Exhibit.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Exhibit.Description" class="control-label"></label>
+        <input asp-for="@Model.Exhibit.Description" class="form-control" />
+        <span asp-validation-for="@Model.Exhibit.Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.Exhibit.Imagename" class="control-label"></label>
+        <input asp-for="@Model.Exhibit.Imagename" class="form-control" />
+        <span asp-validation-for="@Model.Exhibit.Imagename" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Update" class="btn btn-primary" />
+    </div>
+</form>
