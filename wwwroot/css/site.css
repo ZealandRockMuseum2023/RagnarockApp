@@ -16,3 +16,24 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#form_submit {
+    margin-top: 15px;
+    color:red;
+    background-color: darkgrey;
+    
+}
+
+#form_Update {
+    margin-top: 15px;
+    background-color: lawngreen;
+    color: magenta;
+}   
+
+.txt_box {
+    border: 1px solid black;
+    background-color: lime;
+    border-style:dashed;
+}
+    
+    
