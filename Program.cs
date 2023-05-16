@@ -1,3 +1,5 @@
+using RagnarockApp.Interfaces;
+using RagnarockApp.Services;
 namespace RagnarockApp
 {
     public class Program
@@ -8,6 +10,7 @@ namespace RagnarockApp
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddSingleton<IExhibit, ExhibitCatalog>();
 
             var app = builder.Build();
 
