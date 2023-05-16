@@ -34,19 +34,27 @@ namespace RagnarockApp.Services
             return Exhibits[Id];
         }
 
+        //public void UpdateExhibit(Exhibit exhibit)
+        //{
+        //    if (exhibit != null)
+        //    {
+        //        foreach (var e in AllExhibits())
+        //        {
+        //            if (e.Key == exhibit.Id)
+        //            { 
+        //                e.Value.Id = exhibit.Id;
+        //                e.Value.Name = exhibit.Name;
+        //                e.Value.Description = exhibit.Description;
+        //            }
+        //        }
+        //    }
+        //}
+
         public void UpdateExhibit(Exhibit exhibit)
         {
             if (exhibit != null)
             {
-                foreach (var e in AllExhibits())
-                {
-                    if (e.Key == exhibit.Id)
-                    { 
-                        e.Value.Id = exhibit.Id;
-                        e.Value.Name = exhibit.Name;
-                        e.Value.Description = exhibit.Description;
-                    }
-                }
+                Exhibits[exhibit.Id] = exhibit;
             }
         }
 
