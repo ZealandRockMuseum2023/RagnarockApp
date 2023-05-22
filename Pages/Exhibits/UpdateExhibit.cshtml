@@ -3,34 +3,34 @@
 @{
     ViewData["Title"] = "Update Exhibit";
 }
-<h1 class="form__header">Update Exhibit</h1>
+<h1 class="form__header">Update Exhibition</h1>
 
 <form class="form" method="post">
 
     <div class="form__group">
-        <label asp-for="@Model.Exhibit.Id" class="form__label"> Id </label>
-        <input asp-for="@Model.Exhibit.Id" class="form__input" />
+        <label asp-for="@Model.Exhibit.Id" class="form__label"> ID </label>
+        <input asp-for="@Model.Exhibit.Id" class="form__input" placeholder="Please enter ID..." />
         <span asp-validation-for="Exhibit.Id" class="text-danger"></span>
     </div>
     <div class="form__group">
         <label asp-for="@Model.Exhibit.Name" class="form__label">Name </label>
-        <input asp-for="@Model.Exhibit.Name" class="form__input" />
+        <input asp-for="@Model.Exhibit.Name" class="form__input" placeholder="Please enter Name..."  />
         <span asp-validation-for="Exhibit.Name" class="text-danger"></span>
 
     </div>
     <div class="form__group">
         <label asp-for="@Model.Exhibit.Description" class="form__label">Description</label>
-        <input asp-for="@Model.Exhibit.Description" class="form__input" />
+        <input asp-for="@Model.Exhibit.Description" class="form__input" placeholder="Please enter Description..."  />
         <span asp-validation-for="Exhibit.Description" class="text-danger"></span>
 
     </div>
     <div class="form__group">
-        <label asp-for="@Model.Exhibit.Imagename" class="form__label"> ImageName </label>
-        <input asp-for="@Model.Exhibit.Imagename" class="form__input" />
+        <label asp-for="@Model.Exhibit.Imagename" class="form__label"> ImageName</label>
+        <input asp-for="@Model.Exhibit.Imagename" class="form__input" placeholder="Please enter filename..." />
     </div>
 
     
     <div class="form__group">
-        <input id="form_Update" type="submit" value="Update" class="form__submitBtn" />
+        <button type="submit" class="form__updateBtn">Update</button>
     </div>
 </form>
