@@ -4,9 +4,8 @@
     ViewData["Title"] = "CreateExhibit";
 }
     
-
-
-<h1 class="form__header">CreateExhibit</h1>
+<div class="formContainer">
+    <h1 class="form__header">CreateExhibit</h1>
 
 <form class="form" method="post">
 
@@ -32,8 +31,8 @@
         <input asp-for="@Model.exhibit.Imagename" class="form__input"/>
     </div>
 
-    
     <div class="form__group">
-        <input id="form_submit" type="submit" value="Create" class="form__submitBtn" />
+        <input type="submit" value="Create" class="form__submitBtn" />
     </div>
 </form>
+</div>
