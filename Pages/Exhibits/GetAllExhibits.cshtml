@@ -6,20 +6,44 @@
 
 
 
-<h1>GetAllExhibits</h1>
+<h1 class="form__header">GetAllExhibits</h1>
 
-<p>
+@* <p>
     <a asp-page="CreateExhibit">Create New Exhibit</a>
-</p>
+</p> *@
+<div class="topContainer">
+    <form class="SearchForm">
+        <p>
+            Search: <input type="search" asp-for="Filtercriteria" />
+            <input type="submit" class="form__search" value="Filter" />
+        </p>
+    </form>
+    <button>
+        <a asp-page="CreateExhibit" class="createBtn">Create new Exhibit</a>
+    </button>
+</div>
+<section class="dataHeaders">
+<p class="dataHeaders__header">ID</p>
+<p class="dataHeaders__header">Name</p>
+<p class="dataHeaders__header">Description</p>
+<p class="dataHeaders__header">Image</p>
+<p class="dataHeaders__header">Edit / Delete</p>
+</section>
+<article class="data">
+    @foreach (var item in Model.Exhibits) {
+        <section class="dataContainer">
+            <p class="dataContainer__item">@item.Value.Id</p>
+            <p class="dataContainer__item">@item.Value.Name</p>
+            <p class="dataContainer__item">@item.Value.Description</p>
+            <img class="dataContainer__img" src="~/Images/@item.Value.Imagename" alt="" />
+                    <a asp-page="UpdateExhibit" asp-route-id="@item.Key">Edit</a> 
+                    <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
+        </section>
+    }
+</article>
 
-<form>
-    <p>
-        Search: <input type="text" asp-for="Filtercriteria" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
-
-
+@*Previous Code: *@
+@*
 <table class="table">
     <thead>
         <tr>
@@ -60,14 +84,8 @@
                     <a asp-page="UpdateExhibit" asp-route-id="@item.Key">Edit</a> |
                     <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
                 </td>
-               
-
-
-
-
-
             </tr>
         }
-
     </tbody>
 </table>
+*@

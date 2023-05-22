@@ -1,30 +1,36 @@
 ﻿@page
 @model RagnarockApp.Pages.Exhibits.UpdateExhibitModel
 @{
+    ViewData["Title"] = "Update Exhibit";
 }
+<h1 class="form__header">Update Exhibit</h1>
 
-<form method="post">
-    <div class="form-group">
-        <label asp-for="@Model.Exhibit.Id" class="control-label"></label>
-        <input asp-for="@Model.Exhibit.Id" class="form-control" />
-        <span asp-validation-for="@Model.Exhibit.Id" class="text-danger"></span>
+<form class="form" method="post">
+
+    <div class="form__group">
+        <label asp-for="@Model.Exhibit.Id" class="form__label"> Id </label>
+        <input asp-for="@Model.Exhibit.Id" class="form__input" />
+        <span asp-validation-for="Exhibit.Id" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="@Model.Exhibit.Name" class="control-label"></label>
-        <input asp-for="@Model.Exhibit.Name" class="form-control" />
-        <span asp-validation-for="@Model.Exhibit.Name" class="text-danger"></span>
+    <div class="form__group">
+        <label asp-for="@Model.Exhibit.Name" class="form__label">Name </label>
+        <input asp-for="@Model.Exhibit.Name" class="form__input" />
+        <span asp-validation-for="Exhibit.Name" class="text-danger"></span>
+
     </div>
-    <div class="form-group">
-        <label asp-for="@Model.Exhibit.Description" class="control-label"></label>
-        <input asp-for="@Model.Exhibit.Description" class="form-control" />
-        <span asp-validation-for="@Model.Exhibit.Description" class="text-danger"></span>
+    <div class="form__group">
+        <label asp-for="@Model.Exhibit.Description" class="form__label">Description</label>
+        <input asp-for="@Model.Exhibit.Description" class="form__input" />
+        <span asp-validation-for="Exhibit.Description" class="text-danger"></span>
+
     </div>
-    <div class="form-group">
-        <label asp-for="@Model.Exhibit.Imagename" class="control-label"></label>
-        <input asp-for="@Model.Exhibit.Imagename" class="form-control" />
-        <span asp-validation-for="@Model.Exhibit.Imagename" class="text-danger"></span>
+    <div class="form__group">
+        <label asp-for="@Model.Exhibit.Imagename" class="form__label"> ImageName </label>
+        <input asp-for="@Model.Exhibit.Imagename" class="form__input" />
     </div>
-    <div class="form-group">
-        <input Id="form_Update" type="submit" value="Update" class="btn btn-primary" />
+
+    
+    <div class="form__group">
+        <input id="form_Update" type="submit" value="Update" class="form__submitBtn" />
     </div>
 </form>
