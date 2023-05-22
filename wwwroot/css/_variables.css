@@ -12,4 +12,19 @@ x {
 :root {
     --fontHeader: 'Oxygen', sans-serif;
     --fontText: 'Roboto', sans-serif;
+
+    /* Colors for Elements on pages */
+    --mainColor: #F2E6D0;
+    --backgroundColor:#D9C3A9 ;
+    --accentColor1: #2A4C59;
+    --accentColor2: #022026;
+    --accentColor3: #8DA6A6;
+
 }
+
+/* Color Theme Swatches in Hex */
+.götterdämmerung-1-hex { color: #2A4C59; }
+.götterdämmerung-2-hex { color: #022026; }
+.götterdämmerung-3-hex { color: #8DA6A6; }
+.götterdämmerung-4-hex { color: #F2E6D0; }
+.götterdämmerung-5-hex { color: #D9C3A9; }

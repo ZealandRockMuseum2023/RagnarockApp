@@ -1,0 +1,26 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--backgroundColor);
+  width: 100%;
+  padding-top: 1px;
+  margin-top: -1px;
+}
+.navigation__listItem {
+    font-weight: 600;
+}
+
+
+.navigation__link {
+  text-decoration: none;
+  transition: all 200ms;
+  color: var(--accentColor2);
+}
+.navigation__link:hover {
+    color: var(--accentColor3);
+    font-size: 1.1em;
+}

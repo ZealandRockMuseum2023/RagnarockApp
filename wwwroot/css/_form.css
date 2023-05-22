@@ -1,14 +1,10 @@
 
-/* Page container */
-.formContainer {
-    width: 80%;
-    margin: 0 auto;
-}
 /* #region Form Styling */
 
 /* Page Header */
 .form__header {
     font-size: 24px;
+    margin-bottom: 2em;
 }
 /* form styling */
 .form {
@@ -21,30 +17,24 @@
 }
 /* Form items */
 .form__group {
+    align-items: center;
     margin: 5px;
     display: flex;
     flex-direction: column;
 }
+/* add styling for all inputs */
+
 /* Form Labels - (text above) */
 .form__label {
-
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
 }
-/* Input fields */
-.form__input {
-
+.form__label::after {
+    content: ':';
 }
-/* #endregion */
-
-/* #region Button Styling */
-/*Submit*/
-.form__submitBtn {
-    text-align: center;
-    background-color: rgba(0,255,0,0.4);
-    width: 80px;
-    height: 40px;
-    border-radius: 2em;
-
+/* Input Text Fields */
+.form__text {
+font-size: 24px;
 }
-
-
 /* #endregion */

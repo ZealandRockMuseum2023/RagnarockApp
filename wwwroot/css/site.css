@@ -1,3 +1,5 @@
+/* Import css for navigation */
+@import url(_navigation.css);
 /* Import css for GetAllExhibits page*/
 @import url(_data.css);
 /* Import css for Form pages - Create, Update & Delete */
@@ -12,7 +14,46 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+body {
+  background-color: var(--mainColor);
+}
+
+/* Ensure content is centered */
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+/* General styling for elements */
+
+/* General Header styling */
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--fontHeader);
   font-weight: 700;
+}
+
+/* General Form element stylings */
+/* styling for buttons within class".form" */
+.form button {
+  border: thin solid var(--accentColor2);
+  background-color: var(--accentColor1);
+  color: var(--mainColor);
+  text-align: center;
+  width: 5em;
+  height: 2em;
+  border-radius: 2em;
+}
+
+/* basic styling to remove borders and outline when clicking on inputs */
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: thin solid var(--backgroundColor);
+  padding: 5px;
+  transition: all 200ms ease-in-out;
+}
+input:focus {
+  border-bottom: thin solid var(--accentColor2);
+  background-color: rgba(217, 195, 169, 0.5);
+  border-radius: 250px;
 }
