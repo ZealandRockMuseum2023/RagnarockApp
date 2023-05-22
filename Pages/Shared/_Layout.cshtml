@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RagnarockApp</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* Icons from fontawesome *@
+    <script src="https://kit.fontawesome.com/8619d86bb7.js" crossorigin="anonymous"></script>
+    @* Linked Stylesheets *@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/RagnarockApp.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav>
+            <ul class="navigation">
+                <li class="navigation__listItem">
+                    <a class="navigation__link" asp-page="/Index" rel="noreferrer">Home</a>
+                    </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" asp-page="/Privacy" rel="noreferrer">Privacy</a>
+                    </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" asp-page="Exhibits/GetAllExhibits" rel="noreferrer">Exhibitions</a>
+                    </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#" rel="noreferrer" target="_blank">About</a>
+                    </li>
+                <li class="navigation__listItem">
+                    <a class="navigation__link" href="#" rel="noreferrer" target="_blank">Contact</a>
+                    </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">RagnarockApp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -31,24 +54,22 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
+        </nav> *@
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - RagnarockApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    
 
     @await RenderSectionAsync("Scripts", required: false)
+    </div>
 </body>
 </html>
