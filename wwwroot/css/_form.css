@@ -1,0 +1,50 @@
+
+/* Page container */
+.formContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+/* #region Form Styling */
+
+/* Page Header */
+.form__header {
+    font-size: 24px;
+}
+/* form styling */
+.form {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 15px;
+}
+/* Form items */
+.form__group {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+/* Form Labels - (text above) */
+.form__label {
+
+}
+/* Input fields */
+.form__input {
+
+}
+/* #endregion */
+
+/* #region Button Styling */
+/*Submit*/
+.form__submitBtn {
+    text-align: center;
+    background-color: rgba(0,255,0,0.4);
+    width: 80px;
+    height: 40px;
+    border-radius: 2em;
+
+}
+
+
+/* #endregion */
