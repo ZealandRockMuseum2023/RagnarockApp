@@ -10,7 +10,8 @@ namespace RagnarockApp
 
             // Add services to the container.
             builder.Services.AddRazorPages();
-            builder.Services.AddSingleton<IExhibit, ExhibitCatalog>();
+            //builder.Services.AddSingleton<IExhibit, ExhibitCatalog>();
+            builder.Services.AddTransient<IExhibit, ExhibitJson>();
 
             var app = builder.Build();
 
