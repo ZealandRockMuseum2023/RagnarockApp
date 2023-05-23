@@ -1,9 +1,15 @@
 /* Import css for navigation */
 @import url(_navigation.css);
+/* Import css for Index page */
+@import url(_homePage.css);
 /* Import css for GetAllExhibits page*/
 @import url(_data.css);
 /* Import css for Form pages - Create, Update & Delete */
 @import url(_form.css);
+/* Import css for About Page */
+@import url(_about.css);
+/* Import css for Contact page */
+@import url(_contact.css);
 /* import variables */
 @import url(_variables.css);
 /*  */
@@ -22,6 +28,8 @@ body {
 .wrapper {
   width: 80vw;
   margin: 0 auto;
+    /* allow room for navigation bar */
+    padding-top: 5em;
 }
 /* General styling for elements */
 
