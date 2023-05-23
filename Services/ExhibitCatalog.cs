@@ -6,7 +6,7 @@ namespace RagnarockApp.Services
     public class ExhibitCatalog : IExhibit
     {
 
-        private Dictionary<int,Exhibit> Exhibits {get;}
+        public Dictionary<int,Exhibit> Exhibits {get;}
 
         public ExhibitCatalog() 
         { 
@@ -34,21 +34,7 @@ namespace RagnarockApp.Services
             return Exhibits[Id];
         }
 
-        //public void UpdateExhibit(Exhibit exhibit)
-        //{
-        //    if (exhibit != null)
-        //    {
-        //        foreach (var e in AllExhibits())
-        //        {
-        //            if (e.Key == exhibit.Id)
-        //            { 
-        //                e.Value.Id = exhibit.Id;
-        //                e.Value.Name = exhibit.Name;
-        //                e.Value.Description = exhibit.Description;
-        //            }
-        //        }
-        //    }
-        //}
+       
 
         public void UpdateExhibit(Exhibit exhibit)
         {
