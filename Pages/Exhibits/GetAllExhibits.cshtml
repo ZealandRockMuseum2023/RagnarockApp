@@ -3,48 +3,49 @@
 @{
     ViewData["Title"] = "GetAllExhibits";
 }
-
-<h1 class="form__header">All Exhibitions</h1>
+<div class="wrapper">
+    <h1 class="form__header">All Exhibitions</h1>
 
 @* Container for Search / Create *@
-<div class="topContainer">
+    <div class="topContainer">
     @* Search for a specific Exhibition *@
-    <form class="searchForm">
-        <input type="search" class="searchForm__input" asp-for="Filtercriteria" placeholder="Search for a Exhibit..."/>
-        <button type="submit" class="searchForm__submitBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
+        <form class="searchForm">
+            <input type="search" class="searchForm__input" asp-for="Filtercriteria" placeholder="Search for a Exhibit..."/>
+            <button type="submit" class="searchForm__submitBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
 
     @* Create new Exhibition *@
-    <button class="createBtn">
-        <a asp-page="CreateExhibit">Create new Exhibit</a>
-    </button>
-</div>
+        <button class="createBtn">
+            <a asp-page="CreateExhibit">Create new Exhibit</a>
+        </button>
+    </div>
 
 
 @* Headers for Exhibitions *@
-<section class="dataHeaders">
-<p class="dataHeaders__header">ID</p>
-<p class="dataHeaders__header">Name</p>
-<p class="dataHeaders__header">Description</p>
-<p class="dataHeaders__header">Image</p>
-<p class="dataHeaders__header">Edit / Delete</p>
-</section>
+    <section class="dataHeaders">
+        <p class="dataHeaders__header">ID</p>
+        <p class="dataHeaders__header">Name</p>
+        <p class="dataHeaders__header">Description</p>
+        <p class="dataHeaders__header">Image</p>
+        <p class="dataHeaders__header">Edit / Delete</p>
+    </section>
 
 @* containers for each data item *@
-<article class="data">
-    @foreach (var item in Model.Exhibits) {
-        <section class="dataContainer">
-            <p class="dataContainer__item">@item.Value.Id</p>
-            <p class="dataContainer__item">@item.Value.Name</p>
-            <p class="dataContainer__item">@item.Value.Description</p>
-            <img class="dataContainer__img" src="~/Images/@item.Value.Imagename" alt="" />
-            <div class="dataContainer__buttons">
-                    <a asp-page="UpdateExhibit" asp-route-id="@item.Key">Edit</a> 
-                    <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
-            </div>
-        </section>
-    }
-</article>
+    <article class="data">
+        @foreach (var item in Model.Exhibits) {
+                <section class="dataContainer">
+                    <p class="dataContainer__item">@item.Value.Id</p>
+                    <p class="dataContainer__item">@item.Value.Name</p>
+                    <p class="dataContainer__item">@item.Value.Description</p>
+                    <img class="dataContainer__img" src="~/Images/@item.Value.Imagename" alt="" />
+                        <div class="dataContainer__buttons">
+                            <a asp-page="UpdateExhibit" asp-route-id="@item.Key">Edit</a> 
+                            <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
+                        </div>
+                </section>
+            }
+        </article>
+    </div>
 </div>
 
 @*Previous Code: *@

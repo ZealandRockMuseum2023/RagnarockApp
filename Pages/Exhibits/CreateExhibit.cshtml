@@ -3,35 +3,35 @@
 @{
     ViewData["Title"] = "CreateExhibit";
 }
-
+<div class="wrapper">
     <h1 class="form__header">Create a new exhibition</h1>
+    @* Create a new exhibition *@
+        <form class="form" method="post">
+            <div class="form__group">
+                <label asp-for="@Model.exhibit.Id" class="form__label"> ID </label>
+                <input asp-for="@Model.exhibit.Id" class="form__input" placeholder="Please enter ID..."  />
+                <span asp-validation-for="exhibit.Id" class="text-danger"></span>
+            </div>
+            <div class="form__group">
+                <label asp-for="@Model.exhibit.Name" class="form__label">Name </label>
+                <input asp-for="@Model.exhibit.Name" class="form__input" placeholder="Please enter Name..."  />
+                <span asp-validation-for="exhibit.Name" class="text-danger"></span>
 
-<form class="form" method="post">
+            </div>
+            <div class="form__group">
+                <label asp-for="@Model.exhibit.Description" class="form__label">Description</label>
+                <input asp-for="@Model.exhibit.Description" class="form__input" placeholder="Please enter Description..."  />
+                <span asp-validation-for="exhibit.Description" class="text-danger"></span>
 
-    <div class="form__group">
-        <label asp-for="@Model.exhibit.Id" class="form__label"> ID </label>
-        <input asp-for="@Model.exhibit.Id" class="form__input" placeholder="Please enter ID..."  />
-        <span asp-validation-for="exhibit.Id" class="text-danger"></span>
-    </div>
-    <div class="form__group">
-        <label asp-for="@Model.exhibit.Name" class="form__label">Name </label>
-        <input asp-for="@Model.exhibit.Name" class="form__input" placeholder="Please enter Name..."  />
-        <span asp-validation-for="exhibit.Name" class="text-danger"></span>
+        </div>
+            <div class="form__group">
+                <label asp-for="@Model.exhibit.Imagename" class="form__label"> ImageName </label>
+                <input asp-for="@Model.exhibit.Imagename" class="form__input" placeholder="Please enter filename..." />
+            </div>
 
+            <div class="form__group">
+                <button type="submit" class="form__submitBtn">Create</button>
+            </div>
+        </form>
     </div>
-    <div class="form__group">
-        <label asp-for="@Model.exhibit.Description" class="form__label">Description</label>
-        <input asp-for="@Model.exhibit.Description" class="form__input" placeholder="Please enter Description..."  />
-        <span asp-validation-for="exhibit.Description" class="text-danger"></span>
-
-    </div>
-    <div class="form__group">
-        <label asp-for="@Model.exhibit.Imagename" class="form__label"> ImageName </label>
-        <input asp-for="@Model.exhibit.Imagename" class="form__input" placeholder="Please enter filename..." />
-    </div>
-
-    <div class="form__group">
-        <button type="submit" class="form__submitBtn">Create</button>
-    </div>
-</form>
 </div>
