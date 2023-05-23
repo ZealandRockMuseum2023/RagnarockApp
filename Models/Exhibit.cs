@@ -22,5 +22,6 @@ namespace RagnarockApp.Models
         
         public string Imagename { get; set; }
 
+        public string Soundname { get; set; }
     }
 }
