@@ -1,8 +1,32 @@
 {
+  "1": {
+    "Id": 1,
+    "Name": "Exhibit 1",
+    "Description": "guitar 1",
+    "Imagename": "Guitarist.JPEG"
+  },
   "2": {
     "Id": 2,
-    "Name": "hhhhh",
-    "Description": "jojojojojo",
-    "Imagename": "hiuhuh"
+    "Name": "Exhibit 2",
+    "Description": "guitar 2",
+    "Imagename": "RockBand.JPEG"
+  },
+  "3": {
+    "Id": 3,
+    "Name": "Exhibit 3",
+    "Description": "guitar 3",
+    "Imagename": "RockBand2.JPEG"
+  },
+  "4": {
+    "Id": 4,
+    "Name": "Exhibit 4",
+    "Description": "guitar 4",
+    "Imagename": "PopBandSinger.JPEG"
+  },
+  "5": {
+    "Id": 5,
+    "Name": "Exhibit 5",
+    "Description": "guitar 5",
+    "Imagename": "PopBand.JPEG"
   }
 }
