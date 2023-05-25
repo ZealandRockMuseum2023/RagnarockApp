@@ -39,7 +39,7 @@
                     <p class="dataContainer__item">@item.Value.Name</p>
                     <p class="dataContainer__item">@item.Value.Description</p>
                     <img class="dataContainer__img" src="~/Images/@item.Value.Imagename" alt="" />
-                <audio width="5" height="5" controls>
+                <audio class="dataContainer__audio">
                     <source src="/Sound/@item.Value.Soundname" type="audio/mp3">
                 </audio>
                         <div class="dataContainer__buttons">
@@ -51,51 +51,3 @@
         </article>
     </div>
 </div>
-
-@*Previous Code: *@
-@*
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Id
-            </th>
-            <th>
-                Name
-            </th>
-            <th>
-                Description
-            </th>
-            <th>
-                Image
-            </th>
-            <th>
-                Customization
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Exhibits)
-        {
-            <tr>
-                <td>
-                    @item.Value.Id
-                </td>
-                <td>
-                    @item.Value.Name
-                </td>
-                <td>
-                    @item.Value.Description
-                </td>
-                <td>
-                    <img src="~/Images/@item.Value.Imagename" width="100" height="100">
-                </td>
-                <td>
-                    <a asp-page="UpdateExhibit" asp-route-id="@item.Key">Edit</a> |
-                    <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-*@
