@@ -26,7 +26,12 @@
         </div>
             <div class="form__group">
                 <label asp-for="@Model.exhibit.Imagename" class="form__label"> ImageName </label>
-                <input asp-for="@Model.exhibit.Imagename" class="form__input" placeholder="Please enter filename..." />
+                <input asp-for="@Model.exhibit.Imagename" class="form__input" placeholder="Please enter Image filename..." />
+            </div>
+
+            <div class="form__group">
+                <input asp-for="@Model.exhibit.Soundname" class="form__input" placeholder="Please enter Sound filename..." />
+                <label asp-for="@Model.exhibit.Soundname" class="form__label"> SoundName </label>
             </div>
 
             <div class="form__group">
