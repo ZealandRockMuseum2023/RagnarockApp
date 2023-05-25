@@ -3,30 +3,36 @@
     "Id": 1,
     "Name": "Exhibit 1",
     "Description": "guitar 1",
-    "Imagename": "Guitarist.JPEG"
+    "Imagename": "Guitarist.JPEG",
+    "Soundname":  "Ronaldo suiii.mp3"
   },
   "2": {
     "Id": 2,
     "Name": "Exhibit 2",
     "Description": "guitar 2",
-    "Imagename": "RockBand.JPEG"
+    "Imagename": "RockBand.JPEG",
+    "Soundname": "Ronaldo suiii.mp3"
+
   },
   "3": {
     "Id": 3,
     "Name": "Exhibit 3",
     "Description": "guitar 3",
-    "Imagename": "RockBand2.JPEG"
+    "Imagename": "RockBand2.JPEG",
+    "Soundname":""
   },
   "4": {
     "Id": 4,
     "Name": "Exhibit 4",
     "Description": "guitar 4",
-    "Imagename": "PopBandSinger.JPEG"
+    "Imagename": "PopBandSinger.JPEG",
+    "Soundname":""
   },
   "5": {
     "Id": 5,
     "Name": "Exhibit 5",
     "Description": "guitar 5",
-    "Imagename": "PopBand.JPEG"
+    "Imagename": "PopBand.JPEG",
+    "Soundname":""
   }
 }
