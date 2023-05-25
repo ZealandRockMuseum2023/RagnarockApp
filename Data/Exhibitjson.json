@@ -11,7 +11,7 @@
     "Name": "Exhibit 2",
     "Description": "guitar 2",
     "Imagename": "RockBand.JPEG",
-    "Soundname": "Ronaldo suiii.mp3"
+    "Soundname": "Ankara_messi.mp3.mp3"
 
   },
   "3": {
@@ -19,20 +19,20 @@
     "Name": "Exhibit 3",
     "Description": "guitar 3",
     "Imagename": "RockBand2.JPEG",
-    "Soundname":""
+    "Soundname":"funnysound.mp3.mp3"
   },
   "4": {
     "Id": 4,
     "Name": "Exhibit 4",
     "Description": "guitar 4",
     "Imagename": "PopBandSinger.JPEG",
-    "Soundname":""
+    "Soundname":"shutyourmouth.mp3.mp3"
   },
   "5": {
     "Id": 5,
     "Name": "Exhibit 5",
     "Description": "guitar 5",
     "Imagename": "PopBand.JPEG",
-    "Soundname":""
+    "Soundname":"whoisthatguy.mp3.mp3"
   }
 }
