@@ -56,12 +56,12 @@ input {
   outline: none;
   border: none;
   background-color: transparent;
-  border-bottom: thin solid var(--backgroundColor);
+  border-bottom: thin solid var(--accentColor3);
   padding: 5px;
   transition: all 200ms ease-in-out;
 }
 input:focus {
-  border-bottom: thin solid var(--accentColor2);
-  background-color: rgba(217, 195, 169, 0.5);
+  box-shadow: 5px 5px 5px #000;
   border-radius: 250px;
+  border: thin solid var(--accentColor2);
 }
