@@ -27,6 +27,7 @@
         <p class="dataHeaders__header">Name</p>
         <p class="dataHeaders__header">Description</p>
         <p class="dataHeaders__header">Image</p>
+        <p class="dataHeaders__header">Sound</p>
         <p class="dataHeaders__header">Edit / Delete</p>
     </section>
 
@@ -38,6 +39,9 @@
                     <p class="dataContainer__item">@item.Value.Name</p>
                     <p class="dataContainer__item">@item.Value.Description</p>
                     <img class="dataContainer__img" src="~/Images/@item.Value.Imagename" alt="" />
+                <audio width="5" height="5" controls>
+                    <source src="/Sound/@item.Value.Soundname" type="audio/mp3">
+                </audio>
                         <div class="dataContainer__buttons">
                             <a asp-page="UpdateExhibit" asp-route-id="@item.Key">Edit</a> 
                             <a asp-page="DeleteExhibit" asp-route-id="@item.Key">Delete</a>
