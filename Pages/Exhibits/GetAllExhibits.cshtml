@@ -39,7 +39,7 @@
                     <p class="dataContainer__item">@item.Value.Name</p>
                     <p class="dataContainer__item">@item.Value.Description</p>
                     <img class="dataContainer__img" src="~/Images/@item.Value.Imagename" alt="" />
-                <audio class="dataContainer__audio">
+                <audio controls class="dataContainer__audio" >
                     <source src="/Sound/@item.Value.Soundname" type="audio/mp3">
                 </audio>
                         <div class="dataContainer__buttons">
@@ -48,6 +48,5 @@
                         </div>
                 </section>
             }
-        </article>
-    </div>
+    </article>
 </div>
