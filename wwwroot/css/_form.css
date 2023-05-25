@@ -8,21 +8,37 @@
 }
 /* form styling */
 .form {
-    height: 100px;
+    width: 30vw;
+    background-color: var(--backgroundColor);
+    box-shadow: 1px 1px 50px #444;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    justify-items: center;
-    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    border-radius: 50px;
+    margin: 0 auto;
 }
 /* Form items */
 .form__group {
     align-items: center;
     margin: 5px;
-    display: flex;
-    flex-direction: column;
 }
-/* add styling for all inputs */
+/* add styling for text area */
+.form__textarea {
+    width: 20vw;
+    height: 10vh;
+    padding: 15px;
+    border-radius: 15px;
+    border: thin solid var(--accentColor3);
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+}
+
+.form__textarea:focus {
+    border: thin solid var(--accentColor2);
+    box-shadow: 5px 5px 5px black;
+    outline: none;
+}
 
 /* Form Labels - (text above) */
 .form__label {
@@ -33,8 +49,16 @@
 .form__label::after {
     content: ':';
 }
+
+.form__input {
+    width: 250px;
+}
 /* Input Text Fields */
 .form__text {
-font-size: 24px;
+    font-size: 24px;
+}
+
+.form__submitBtn {
+    justify-self: flex-end;
 }
 /* #endregion */
