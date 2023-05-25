@@ -8,36 +8,37 @@
     <h1 class="form__header">Update Exhibition</h1>
 
     <form class="form" method="post">
+        @* ID *@
         <div class="form__group">
             <label asp-for="@Model.Exhibit.Id" class="form__label"> ID </label>
             <input asp-for="@Model.Exhibit.Id" class="form__input" placeholder="Please enter ID..." />
             <span asp-validation-for="Exhibit.Id" class="text-danger"></span>
         </div>
-
+        @* Name *@
         <div class="form__group">
             <label asp-for="@Model.Exhibit.Name" class="form__label">Name </label>
             <input asp-for="@Model.Exhibit.Name" class="form__input" placeholder="Please enter Name..."  />
             <span asp-validation-for="Exhibit.Name" class="text-danger"></span>
         </div>
-        
+        @* Description *@
         <div class="form__group">
             <label asp-for="@Model.Exhibit.Description" class="form__label">Description</label>
-            <input asp-for="@Model.Exhibit.Description" class="form__input" placeholder="Please enter Description..."  />
+            <textarea asp-for="@Model.Exhibit.Description" class="form__textarea" placeholder="Please enter Description..."></textarea>
             <span asp-validation-for="Exhibit.Description" class="text-danger"></span>
         </div>
-
+        @* Image File*@
         <div class="form__group">
             <label asp-for="@Model.Exhibit.Imagename" class="form__label"> ImageName</label>
             <input asp-for="@Model.Exhibit.Imagename" class="form__input" placeholder="Please enter image filename..." />
         </div>
-
+        @* Audio File *@
         <div class="form__group">
             <label asp-for="@Model.Exhibit.Soundname" class="form__label"> SoundName</label>
             <input asp-for="@Model.Exhibit.Soundname" class="form__input" placeholder="Please enter sound filename..." />
         </div>
         
         <div class="form__group">
-            <button type="submit" class="form__updateBtn">Update</button>
+            <button type="submit" class="form__submitBtn">Update</button>
         </div>
     </form>
 </div>

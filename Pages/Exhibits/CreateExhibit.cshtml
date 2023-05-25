@@ -7,31 +7,34 @@
     <h1 class="form__header">Create a new exhibition</h1>
     @* Create a new exhibition *@
         <form class="form" method="post">
+            @* ID *@
             <div class="form__group">
                 <label asp-for="@Model.exhibit.Id" class="form__label"> ID </label>
                 <input asp-for="@Model.exhibit.Id" class="form__input" placeholder="Please enter ID..."  />
                 <span asp-validation-for="exhibit.Id" class="text-danger"></span>
             </div>
+            @* Name *@
             <div class="form__group">
                 <label asp-for="@Model.exhibit.Name" class="form__label">Name </label>
                 <input asp-for="@Model.exhibit.Name" class="form__input" placeholder="Please enter Name..."  />
                 <span asp-validation-for="exhibit.Name" class="text-danger"></span>
 
             </div>
+            @* Description *@
             <div class="form__group">
                 <label asp-for="@Model.exhibit.Description" class="form__label">Description</label>
-                <input asp-for="@Model.exhibit.Description" class="form__input" placeholder="Please enter Description..."  />
+                <textarea asp-for="@Model.exhibit.Description" class="form__textarea" placeholder="Please enter Description..."></textarea>
                 <span asp-validation-for="exhibit.Description" class="text-danger"></span>
-
         </div>
+            @* Image File *@
             <div class="form__group">
                 <label asp-for="@Model.exhibit.Imagename" class="form__label"> ImageName </label>
                 <input asp-for="@Model.exhibit.Imagename" class="form__input" placeholder="Please enter Image filename..." />
             </div>
-
+            @* Audio File *@
             <div class="form__group">
-                <input asp-for="@Model.exhibit.Soundname" class="form__input" placeholder="Please enter Sound filename..." />
                 <label asp-for="@Model.exhibit.Soundname" class="form__label"> SoundName </label>
+                <input asp-for="@Model.exhibit.Soundname" class="form__input" placeholder="Please enter Sound filename..." />
             </div>
 
             <div class="form__group">
