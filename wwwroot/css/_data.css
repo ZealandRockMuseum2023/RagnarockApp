@@ -31,6 +31,7 @@
 .createBtn a {
     color: var(--mainColor);
     text-decoration: none;
+    transition: 200ms ease-in-out;
 }
 .createBtn a:hover {
     color: white;
@@ -42,9 +43,13 @@
 
 .dataHeaders {
     display: grid;
-    grid-template-columns: 0.3fr 0.7fr 1.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.3fr 0.5fr 1.5fr 1fr 1.5fr 0.2fr;
     margin: 15px 0px;
     border-bottom: thin solid var(--accentColor2);
+}
+/* specific styling for some headers */
+.dataHeaders__header:nth-child(4), .dataHeaders__header:nth-child(5) {
+    text-align: center;
 }
 
 .dataHeaders__header {
@@ -62,7 +67,7 @@
 .dataContainer {
     margin: 5px;
     display: grid;
-    grid-template-columns: 0.3fr 0.7fr 1.5fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.3fr 0.5fr 1.5fr 1fr 1.5fr 0.2fr;
     align-items: center;
     grid-template-areas: 'ID Name Desc Img Audio Edit';
 }
@@ -88,9 +93,38 @@
 }
 /* Styling audio containers */
 .dataContainer__audio {
-    width: 100px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 300px;
+    box-shadow: 5px 5px 25px #444;
 }
 audio::-webkit-media-controls-panel {
-    background-color: var(--accentColor1);
+    background-color: var(--accentColor2);
 }
-/* #endregion */
+audio::-webkit-media-controls-play-button {
+    background-color: var(--backgroundColor);
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 250px (--mainColor);
+}
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: var(--backgroundColor);
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+    }
+    audio::-webkit-media-controls-mute-button {
+        background-color: var(--backgroundColor);
+        margin: 0 15px;
+        border-radius: 30px;
+        box-shadow: 4px 4px 250px (--mainColor);
+    }
+    /* #endregion */
