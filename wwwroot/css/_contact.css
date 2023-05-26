@@ -1,0 +1,36 @@
+.contact {
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+    grid-template-areas: "Text blank Image";
+    }
+    
+    /* styling for textcontainer, headers, etc. */
+    .contact__textContent {
+    grid-area: Text;
+    }
+    /*
+    .contact_container {
+    
+    }
+    
+    .contact__header {
+    
+    }
+    
+    .contact__content {
+    
+    }
+    */
+    /* styling for image container */
+    .contact__imgContainer {
+    grid-area: Image;
+    }
+    /*
+    .contact__img {
+    
+    }
+    
+    .contact__imgText {
+    
+    }
+    */
