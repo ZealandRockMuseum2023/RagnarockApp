@@ -1,38 +1,38 @@
 {
   "1": {
     "Id": 1,
-    "Name": "Exhibit 1",
-    "Description": "guitar 1",
-    "Imagename": "Guitarist.JPEG",
-    "Soundname":  "Ronaldo suiii.mp3"
+    "Name": "Guitar",
+    "Description": "Guitaren bliver brugt som en af de vigtigste instrumenter i et rockband, næsten alle bands har minimum 1 guitar med.",
+    "Imagename": "Guitar.JPEG",
+    "Soundname": "Ronaldo suiii.mp3"
   },
   "2": {
     "Id": 2,
-    "Name": "Exhibit 2",
-    "Description": "guitar 2",
-    "Imagename": "RockBand.JPEG",
+    "Name": "Blokfløjte",
+    "Description": "Blokfløjten har en fantisk lyd og man kan spille en masse melodiere på en blokføjte.",
+    "Imagename": "BlokFløjte.JPEG",
     "Soundname": "Ankara_messi.mp3.mp3"
 
   },
   "3": {
     "Id": 3,
-    "Name": "Exhibit 3",
-    "Description": "guitar 3",
-    "Imagename": "RockBand2.JPEG",
-    "Soundname":"funnysound.mp3.mp3"
+    "Name": "Bass",
+    "Description": "Bass er ligesom guitaren en af de vigtiste instrumenter og har en fantastisk dyb melodi.",
+    "Imagename": "Bass.JPEG",
+    "Soundname": "funnysound.mp3.mp3"
   },
   "4": {
     "Id": 4,
-    "Name": "Exhibit 4",
-    "Description": "guitar 4",
-    "Imagename": "PopBandSinger.JPEG",
-    "Soundname":"shutyourmouth.mp3.mp3"
+    "Name": "Keyboard",
+    "Description": "Keyboard er et fantastisk instrument som kan bruges i næsten alle former for musik, man kan næsten spille alle lyde og melodier på et keyboard",
+    "Imagename": "Keyboard.JPEG",
+    "Soundname": "shutyourmouth.mp3.mp3"
   },
   "5": {
     "Id": 5,
-    "Name": "Exhibit 5",
-    "Description": "guitar 5",
-    "Imagename": "PopBand.JPEG",
-    "Soundname":"whoisthatguy.mp3.mp3"
+    "Name": "Trummer",
+    "Description": "Trummerne er et af de fedeste instrumenter i musikverden, næsten alle bands har en trommeslager.",
+    "Imagename": "trummer.JPEG",
+    "Soundname": "whoisthatguy.mp3.mp3"
   }
 }
