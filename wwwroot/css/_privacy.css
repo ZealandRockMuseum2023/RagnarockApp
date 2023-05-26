@@ -1,0 +1,36 @@
+.privacy {
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr;
+    grid-template-areas: "Text blank Image";
+    }
+    
+    /* styling for textcontainer, headers, etc. */
+    .privacy__textContent {
+    grid-area: Text;
+    }
+    /*
+    .about_container {
+    
+    }
+    
+    .about__header {
+    
+    }
+    
+    .about__content {
+    
+    }
+    */
+    /* styling for image container */
+    .privacy__imgContainer {
+    grid-area: Image;
+    }
+    /*
+    .about__img {
+    
+    }
+    
+    .about__imgText {
+    
+    }
+    */
